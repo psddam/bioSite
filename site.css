@@ -1,0 +1,300 @@
+/*
+    Name: Peter Ddamulira
+    Date: September 13, 2026
+    Assignment: bioSite Development
+*/
+
+/* ---------- ATOMS ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f0e6;
+    color: #4d5b66;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: #17324d;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+a {
+    color: #17324d;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+    color: #c79a3b;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* ---------- HEADER / NAVIGATION ---------- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background-color: #17324d;
+}
+
+.site-title h1 {
+    color: #ffffff;
+}
+
+.site-title p {
+    margin: 3px 0 0;
+    color: #c79a3b;
+    font-size: 0.9rem;
+}
+
+nav a {
+    margin-left: 25px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: #c79a3b;
+    border-bottom: 2px solid #c79a3b;
+}
+
+/* ---------- HOME HERO ---------- */
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 430px;
+    padding: 70px 8%;
+    background-color: #ffffff;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h2 {
+    max-width: 650px;
+    margin: 10px 0 20px;
+    font-size: 3.2rem;
+}
+
+.hero-content > p:not(.eyebrow) {
+    max-width: 620px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #c79a3b;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #17324d;
+}
+
+/* ---------- HOME INTRO ---------- */
+
+.intro {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.intro > p {
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.feature-card {
+    flex: 1;
+    max-width: 350px;
+    padding: 28px;
+    background-color: #ffffff;
+    border-top: 4px solid #c79a3b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h3 {
+    margin-top: 0;
+}
+
+/* ---------- PAGE HEADINGS ---------- */
+
+.page-heading {
+    padding: 60px 8%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.page-heading h2 {
+    margin: 5px 0 15px;
+    font-size: 2.8rem;
+}
+
+.page-heading > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about-section {
+    display: flex;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 8%;
+}
+
+.about-content {
+    flex: 2;
+}
+
+.about-content h2 {
+    margin-top: 0;
+}
+
+.about-content h3 {
+    margin-top: 30px;
+}
+
+.quote-card {
+    flex: 1;
+    align-self: flex-start;
+    padding: 30px;
+    background-color: #17324d;
+    border-top: 5px solid #c79a3b;
+}
+
+.quote-card h3 {
+    margin-top: 0;
+    color: #c79a3b;
+}
+
+.quote-card p {
+    color: #ffffff;
+}
+
+/* ---------- HOBBIES PAGE ---------- */
+
+.hobbies-grid {
+    display: flex;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 8%;
+}
+
+.hobby-card {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #c79a3b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hobby-number {
+    color: #c79a3b;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hobby-card h2 {
+    font-size: 1.5rem;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    padding: 20px;
+    background-color: #17324d;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+/* ---------- RESPONSIVE LAYOUT ---------- */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.4rem;
+    }
+
+    .feature-grid,
+    .about-section,
+    .hobbies-grid {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        max-width: none;
+    }
+}
