@@ -1,96 +1,150 @@
 <!--
     Name: Peter Ddamulira
-    Date: September 13, 2026
-    Assignment: bioSite Development
+    Date: September 16, 2026
+    Assignment: bioSite Development and GitHub Pages Deployment
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Hobbies | Peter Ddamulira</title>
-
+    <meta name="description" content="Hobbies and interests of Peter Ddamulira">
+    <title>Peter Ddamulira | Hobbies</title>
     <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="site-title">
-            <h1>Peter Ddamulira</h1>
-            <p>My bioSite</p>
-        </div>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="site-name" href="index.html">Peter Ddamulira</a>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="hobbies.html" class="active">Hobbies</a>
-        </nav>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active" href="hobbies.html">Hobbies</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-
-        <section class="page-heading">
-            <p class="eyebrow">THINGS I ENJOY</p>
-            <h2>My Hobbies</h2>
-            <p>
-                Some of the activities and interests I enjoy outside of
-                my everyday responsibilities.
-            </p>
+        <section class="page-hero">
+            <div>
+                <p class="eyebrow">HOBBIES &amp; INTERESTS</p>
+                <h1>What I enjoy beyond the everyday routine.</h1>
+                <p>
+                    My hobbies give me opportunities to learn, explore, spend
+                    time with people I care about, and enjoy life outside of work.
+                </p>
+            </div>
         </section>
 
-        <section class="hobbies-grid">
-
+        <section class="hobby-section">
             <article class="hobby-card">
-                <div class="hobby-number">01</div>
+                <figure>
+                    <img
+                        src="images/20240809_140507.jpg"
+                        alt="A moment representing an interest in technology"
+                    >
+                    <figcaption>Technology &amp; Coding</figcaption>
+                </figure>
 
-                <h2>Technology & Coding</h2>
+                <div class="hobby-copy">
+                    <p class="number">01</p>
+                    <h2>Technology &amp; Coding</h2>
+                    <p>
+                        One of my strongest interests is technology. I enjoy
+                        understanding how digital products work and learning
+                        how code can be used to solve real problems.
+                    </p>
+                    <p>
+                        Building websites also gives me a chance to combine
+                        technical skills with creativity and design.
+                    </p>
+                </div>
+            </article>
 
-                <p>
-                    I enjoy working with technology and learning more about
-                    software development. Coding gives me an opportunity to
-                    solve problems, experiment with ideas, and turn those
-                    ideas into something that actually works.
-                </p>
+            <article class="hobby-card reverse">
+                <figure>
+                    <img
+                        src="images/20251226_093503(1).jpg"
+                        alt="A travel memory"
+                    >
+                    <figcaption>Travel &amp; Exploration</figcaption>
+                </figure>
+
+                <div class="hobby-copy">
+                    <p class="number">02</p>
+                    <h2>Travel</h2>
+                    <p>
+                        Travel gives me an opportunity to step outside of my
+                        normal routine and experience different environments.
+                    </p>
+                    <p>
+                        I enjoy the memories that come from visiting new places
+                        and sharing those experiences with the people close to me.
+                    </p>
+                </div>
             </article>
 
             <article class="hobby-card">
-                <div class="hobby-number">02</div>
+                <figure>
+                    <img
+                        src="images/20231231_213204.jpg"
+                        alt="A personal leisure and family memory"
+                    >
+                    <figcaption>Family &amp; Leisure</figcaption>
+                </figure>
 
-                <h2>Travel</h2>
-
-                <p>
-                    Traveling is something I enjoy because it gives me a
-                    chance to experience different places and cultures.
-                    Every trip creates new experiences, memories, and
-                    opportunities to see life from another perspective.
-                </p>
+                <div class="hobby-copy">
+                    <p class="number">03</p>
+                    <h2>Family &amp; Leisure</h2>
+                    <p>
+                        I value opportunities to slow down and spend quality
+                        time with family and friends.
+                    </p>
+                    <p>
+                        Whether it is celebrating an occasion, going somewhere
+                        together, or simply enjoying a quiet day, those moments
+                        are an important balance to school, work, and other goals.
+                    </p>
+                </div>
             </article>
-
-            <article class="hobby-card">
-                <div class="hobby-number">03</div>
-
-                <h2>Family & Leisure</h2>
-
-                <p>
-                    I value spending quality time with family and enjoying
-                    opportunities to relax. Having time away from work and
-                    school helps me recharge and appreciate the people and
-                    moments that matter most.
-                </p>
-            </article>
-
         </section>
 
+        <section class="photo-banner">
+            <figure>
+                <img
+                    src="images/20260412_142647.jpg"
+                    alt="A meaningful personal moment"
+                >
+                <figcaption>Making time for the people and experiences that matter.</figcaption>
+            </figure>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Peter Ddamulira | CSD 340 bioSite</p>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <h2>Peter Ddamulira</h2>
+                <p>CSD 340 Web Development with HTML and CSS</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://github.com/psddam/bioSite"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub Repository</a>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2026 Peter Ddamulira</p>
     </footer>
 
 </body>
-
 </html>

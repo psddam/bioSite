@@ -1,101 +1,169 @@
 <!--
     Name: Peter Ddamulira
-    Date: September 13, 2026
-    Assignment: bioSite Development
+    Date: September 16, 2026
+    Assignment: bioSite Development and GitHub Pages Deployment
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Peter Ddamulira | bioSite</title>
-
+    <meta name="description" content="Peter Ddamulira bioSite">
+    <title>Peter Ddamulira | Home</title>
     <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="site-title">
-            <h1>Peter Ddamulira</h1>
-            <p>My bioSite</p>
-        </div>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="site-name" href="index.html">Peter Ddamulira</a>
 
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="hobbies.html">Hobbies</a>
-        </nav>
+            <nav aria-label="Main navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-
         <section class="hero">
             <div class="hero-content">
                 <p class="eyebrow">WELCOME TO MY BIOSITE</p>
 
-                <h2>Faith, Family, Technology & Growth</h2>
+                <h1>
+                    Faith, Family,<br>
+                    <span>Technology & Growth.</span>
+                </h1>
 
-                <p>
-                    Welcome to my bioSite. This website shares a little about
-                    who I am, the things that are important to me, and some of
-                    the interests that continue to shape my life.
+                <p class="hero-text">
+                    My name is Peter Ddamulira. This site shares a little about
+                    who I am, what matters to me, and some of the interests that
+                    continue to shape my journey.
                 </p>
 
-                <a href="about.html" class="button">Learn More About Me</a>
+                <div class="hero-links">
+                    <a class="button primary-button" href="about.html">
+                        Learn More About Me
+                    </a>
+
+                    <a class="button secondary-button" href="hobbies.html">
+                        Explore My Hobbies
+                    </a>
+                </div>
+            </div>
+
+            <figure class="hero-image">
+                <img
+                    src="images/20260811_122145.jpg"
+                    alt="Peter Ddamulira"
+                >
+                <figcaption>Continuing to learn, grow, and move forward.</figcaption>
+            </figure>
+        </section>
+
+        <section class="intro-section">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>The things that shape my journey.</h2>
+                <p>
+                    My interests connect different parts of my life, from
+                    technology and education to travel, family, and faith.
+                </p>
+            </div>
+
+            <div class="card-grid">
+                <article class="feature-card">
+                    <figure>
+                        <img
+                            src="images/20240809_140507.jpg"
+                            alt="A moment representing technology and personal growth"
+                        >
+                        <figcaption>Technology &amp; Growth</figcaption>
+                    </figure>
+
+                    <div class="card-content">
+                        <h3>Technology</h3>
+                        <p>
+                            Technology gives me an opportunity to solve problems,
+                            keep learning, and turn ideas into something useful.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <figure>
+                        <img
+                            src="images/20251226_093503(1).jpg"
+                            alt="A personal travel memory"
+                        >
+                        <figcaption>Travel &amp; Experiences</figcaption>
+                    </figure>
+
+                    <div class="card-content">
+                        <h3>Travel</h3>
+                        <p>
+                            I enjoy experiencing different places, creating
+                            memories, and seeing life from a new perspective.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <figure>
+                        <img
+                            src="images/20260412_142647.jpg"
+                            alt="A personal moment representing faith and family"
+                        >
+                        <figcaption>Faith &amp; Family</figcaption>
+                    </figure>
+
+                    <div class="card-content">
+                        <h3>Faith &amp; Family</h3>
+                        <p>
+                            Faith and family are important parts of my life and
+                            influence the values I carry into everything I do.
+                        </p>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <section class="intro">
-
-            <h2>A Little About Me</h2>
-
+        <section class="quote-section">
+            <p class="eyebrow">MY APPROACH</p>
+            <blockquote>
+                “Keep learning, keep building, and keep moving forward.”
+            </blockquote>
             <p>
-                My life is shaped by faith, family, education, technology,
-                and a desire to continue learning and growing. I enjoy
-                building new skills, exploring new ideas, and using
-                technology to create meaningful solutions.
+                Growth does not always happen at once. I believe it comes from
+                staying committed to the process and continuing to improve.
             </p>
-
-            <div class="feature-grid">
-
-                <article class="feature-card">
-                    <h3>Technology</h3>
-                    <p>
-                        I enjoy learning about software development and
-                        building practical technology projects.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <h3>Travel</h3>
-                    <p>
-                        Traveling gives me an opportunity to experience new
-                        places, cultures, people, and perspectives.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <h3>Faith & Family</h3>
-                    <p>
-                        Faith and family are important parts of my life and
-                        continue to influence my values and goals.
-                    </p>
-                </article>
-
-            </div>
-
         </section>
-
     </main>
 
-    <footer>
-        <p>&copy; 2026 Peter Ddamulira | CSD 340 bioSite</p>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <h2>Peter Ddamulira</h2>
+                <p>CSD 340 Web Development with HTML and CSS</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://github.com/psddam/bioSite"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub Repository</a>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2026 Peter Ddamulira</p>
     </footer>
 
 </body>
-
 </html>
